@@ -46,7 +46,7 @@ if uploaded_file and jd_input:
     if st.button("**🔍 Analyze Resume**"):
         with st.spinner("**⏳ Analyzing... Please wait**"):
             # API Request
-            url = "https://r9pd51qvk2.execute-api.us-west-2.amazonaws.com/dev/assess-match"
+            url = <<get_your_own_api_via_amazon_apigateway>>
             files = {"file": (uploaded_file.name, uploaded_file, uploaded_file.type)}
             payload = {'job_description': jd_input}
             headers = {}
