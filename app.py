@@ -39,7 +39,7 @@ def analyze_resume(resume_file:str, job_description:str)->str:
     try:
         bedrock = boto3.client("bedrock-runtime", region_name = "us-west-2",
                                config = botocore.config.Config(read_timeout = 300, retries = {'max_attempts':3}))
-        response = bedrock.invoke_model(body = json.dumps(payload), modelId = "anthropic.claude-3-5-haiku-20241022-v1:0")
+        response = bedrock.invoke_model(body = json.dumps(payload), modelId = <<model_name>>)
         response_content = response["body"].read().decode("utf-8")
         response_data = json.loads(response_content)
         response_analysis = response_data["content"][0]["text"]
