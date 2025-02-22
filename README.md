@@ -13,7 +13,7 @@ This project is an **AWS-powered AI Resume Analyzer** designed to help job seeke
 - 📊 **Results displayed in real-time on the UI**
 
 ## 🏗️ Architecture
-!(Architecture_AI_Analyzer.png)
+![Architecture](Architecture_AI_Analyzer.png)
 
 ## 🛠️ Setup Instructions
 ### Prerequisites
