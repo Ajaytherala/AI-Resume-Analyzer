@@ -13,14 +13,7 @@ This project is an **AWS-powered AI Resume Analyzer** designed to help job seeke
 - 📊 **Results displayed in real-time on the UI**
 
 ## 🏗️ Architecture
-```mermaid
-graph TD;
-    A[User Uploads Resume & Job Description] -->|Request Sent| B(API Gateway);
-    B -->|Triggers| C(Lambda Function);
-    C -->|Invokes| D(Amazon Bedrock LLM);
-    D -->|Processes & Returns JSON| C;
-    C -->|Sends Response| E(Streamlit UI);
-```
+!(Architecture_AI_Analyzer.png)
 
 ## 🛠️ Setup Instructions
 ### Prerequisites
